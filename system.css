@@ -1,0 +1,411 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #F5F7FE;
+    padding-top: 56px;  
+}
+
+.container{
+    margin: auto;
+    padding: 0;
+}
+
+.nav-link {
+    animation: fadeIn 0.5s ease-in-out;
+    font-weight: 500;
+}
+
+.nav-item {
+    margin-left: 15px; /* Adjust this value for desired horizontal space */
+    margin-right: 0; /* Clear any default right margin */
+}
+
+.nav-item:first-child {
+    margin-left: 0; /* Remove left margin from the first item */
+}
+
+.navbar-nav {
+    display: flex;
+    flex-direction: row; /* Explicitly set to row for horizontal alignment */
+    align-items: center; /* Vertically centers the nav links within the navbar */
+    /* Add ms-auto if not already present in HTML, which you have: <ul class="navbar-nav ms-auto"> */
+}
+
+.nav-link:hover {
+    font-weight: bold;
+} 
+
+#NavBarColor {
+    border: solid 1px #9b9b9b;
+    background-color: #f5f7fe;
+}
+
+  #AboutCompY, #ServicesY, #ContactUsY{
+    max-width: none;
+    margin: 0;
+    white-space: nowrap;
+    display: inline-block;
+  }
+
+/* Logo, navbar */ 
+
+.logo {
+    font-weight: 500;
+    transform: translateY(-2px);
+}
+
+.logox {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    letter-spacing: 2px;
+}
+
+
+/* Slider */
+
+.carousel {
+    position: relative;
+}
+
+.carousel-item {
+    height: 92.5vh; /*can be 100vh, fullscreen */
+    min-height: 300px;
+    background-size: cover;
+    transition: opacity 0.5s ease-in-out; /* Note: Bootstrap handles slide transitions. This might be for a custom effect. */
+    background-repeat: no-repeat; /* Combined with background-image class */
+    background-position: center center; /* Combined with background-image class */
+}
+
+/* Changed ID to class for multiple items */
+.carousel-background-image {
+    background-image: url(honeycomb.png); /* Ensure this path is correct */
+    /* background-repeat: no-repeat; /* Moved to .carousel-item for consolidation */
+    /* background-size: cover; /* Moved to .carousel-item for consolidation */
+}
+
+
+.carousel-item::before {
+    content: "";
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0.7;
+    position: absolute;
+    background: #1E4590; /* This fixed background will overlay all slides with a blue tint */
+    /* If you want slide-specific colors to be more prominent, consider adjusting this */
+}
+
+.carousel-caption {
+    position: absolute;
+    bottom: 10px; /* Adjusted for potentially taller content */
+    left: 5%;     /* Give some padding from edges */
+    right: 5%;    /* Give some padding from edges */
+    width: 90%;   /* Make caption area wider */
+    margin-bottom: 120px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 15px; /* Keep horizontal padding */
+    transition: opacity 0.5s ease-in-out;
+    /* text-align: left; /* Remove this, flex children will handle alignment */
+}
+
+.caption-flex-container {
+    display: flex;
+    align-items: center; /* Vertically align items in the middle */
+    gap: 30px; /* Space between text and image */
+    width: 100%;
+}
+
+.caption-text-content {
+    flex: 3;                     /* Keep this: it defines its width relative to the image */
+    text-align: left;            /* Keep this: for default text alignment within the block */
+    
+    /* --- ADD THESE LINES FOR VERTICAL CENTERING OF ITS CHILDREN --- */
+    display: flex;               /* Make this a flex container */
+    flex-direction: column;      /* Stack its children (h5, p, button div) vertically */
+    justify-content: center;     /* Vertically center the children within this container */
+    /* Optional: if you want text content to not stretch full width of this container */
+    /* align-items: flex-start; */ /* This would align children to the start (left) of the cross-axis if they don't take full width */
+                                 /* but text-align: left generally handles this for text. */
+}
+
+.caption-image-content {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Add perspective for 3D transforms if you get more advanced, optional for this specific effect */
+    /* perspective: 1000px; */
+}
+
+/* NEW: Container for the image stack effect */
+.image-stack-effect {
+    position: relative; /* Crucial for positioning pseudo-elements */
+    max-width: 100%;    /* Ensure it doesn't overflow its flex container */
+    max-height: 350px;  /* Match the max-height of your image if you had one */
+    display: inline-block; /* So it only takes the space of its content */
+}
+
+/* MODIFIED: Style for the main image within the stack */
+.image-stack-effect img {
+    display: block; /* Removes extra space below image if it's inline */
+    max-width: 100%;
+    max-height: 350px; /* Or whatever max-height you were using */
+    height: auto;
+    border-radius: 8px; /* Keep your border-radius */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* A slightly more pronounced shadow for the top image */
+    
+    position: relative; /* To ensure it's on top of pseudo-elements by default or with z-index */
+    z-index: 3;         /* Highest layer */
+    
+    /* --- Tilt Effect for the main image --- */
+    transform: rotate(-3.5deg);
+    transition: transform 0.3s ease-out; /* Smooth transition on hover */
+}
+
+/* Optional: Hover effect to slightly un-tilt or lift the image */
+.image-stack-effect:hover img {
+    transform: rotate(-1deg) scale(1.03); /* Slightly less tilt and a bit larger */
+}
+
+
+/* NEW: Styling for the background layers using pseudo-elements */
+.image-stack-effect::before,
+.image-stack-effect::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px; /* Match the image's border-radius */
+    background-color: rgba(255, 255, 255, 0.4); /* Translucent white, adjust as needed */
+    /* You could also use a very light gray: background-color: #f0f0f0; or similar */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Softer shadow for back layers */
+    transition: transform 0.3s ease-out;
+}
+
+/* NEW: Styling for the first layer behind (::before) */
+.image-stack-effect::before {
+    z-index: 2; /* Middle layer */
+    /* Tilt and offset */
+    transform: rotate(-1.5deg) translate(4px, 4px);
+}
+
+.image-stack-effect:hover::before {
+    transform: rotate(0deg) translate(2px, 2px); /* Adjust hover effect for this layer */
+}
+
+/* NEW: Styling for the second layer behind (::after) */
+.image-stack-effect::after {
+    z-index: 1; /* Bottom layer */
+    /* Tilt and offset differently */
+    transform: rotate(0.5deg) translate(8px, 8px);
+}
+
+.image-stack-effect:hover::after {
+    transform: rotate(1deg) translate(4px, 4px); /* Adjust hover effect for this layer */
+}
+
+.caption-image-content img {
+    max-width: 100%;
+    max-height: 350px; /* Optional: constrain image height */
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Optional: add some shadow to image */
+}
+
+
+.carousel-caption h5 {
+    font-size: 2rem; /* Responsive font size */
+    font-weight: 700;
+    /* text-align: left; /* Handled by .caption-text-content */
+}
+
+/* Specific heading styles */
+#CarETRIS1, #CarSPMS1, #CarPOS1 {
+    font-size: 40px; /* Larger font for main title */
+    /* text-align: left; /* Handled by .caption-text-content */
+}
+
+#CarETRIS, #CarSPMS, #CarPOS {
+    /* text-align: left; /* Handled by .caption-text-content */
+    font-size: 30px; /* Sub-title */
+    margin-bottom: 15px; /* Space below sub-title */
+}
+
+
+.carousel-caption p {
+    font-size: 1.125rem;
+    margin-top: 0.5rem;
+    line-height: 1.6;
+    /* text-align: left; /* Handled by .caption-text-content */
+}
+
+/* Specific paragraph styles - removed margin-right, adjusted margin-bottom */
+#CarETRISP, #CarSPMSP, #CarPOSP {
+    /* text-align: left; /* Handled by .caption-text-content */
+    /* margin-right: 600px; /* REMOVED - Flexbox handles width */
+    margin-bottom: 40px; /* Adjusted spacing */
+    margin-top: 15px; /* Adjusted spacing */
+}
+
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%; /* reduce width from default 15% */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 2rem;
+    height: 2rem;
+    background-size: contain;
+}
+
+.slider-btn {
+    margin-top: 30px; /* Adjusted spacing */
+    /* margin-left: -40px; /* REMOVED - Button will align left within its container */
+}
+
+.slider-btn .btn {
+    color: black;
+    font-size: 1rem;
+    background-color: #E8AB42;
+    border-radius: 50px;
+    padding: 1.2rem 1.8rem; /* Slightly adjusted padding */
+    margin-right: 0px;
+    box-shadow: 0 4px 4px 0 rgba(254, 228, 179, 0.25);
+    transition: all 0.3s ease;
+}
+
+.slider-btn .btn:hover {
+    background-color: #c98a24; /* Slightly darker gold */
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+/* Ensured #ETRBSB is styled correctly if it's a general link style */
+/* If #ETRBSB is just for one button's link, the unique IDs in HTML for other links are better */
+#ETRBSB, .nav-link { /* Applied to class as well for other links if they share this style */
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    text-decoration: none; /* Ensure links don't have underline if button is the visual */
+}
+
+
+.carousel-indicators {
+    position: absolute;
+    bottom: 20px;
+    /* Adjust left to align under the text content block */
+    /* If .carousel-caption is 90% width (centered), and text is 60% of that,
+       text block starts at 5% (caption start) + 0% (text start within caption) = 5% from viewport left.
+       Text block width = 90% * 60% = 54% of viewport.
+       Center of text block = 5% + (54% / 2) = 5% + 27% = 32% from viewport left. */
+    left: 32%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    z-index: 15; /* Ensure they are above other elements */
+}
+
+
+.carousel-indicators button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #e8ab42;
+    border: none;
+    opacity: 0.6;
+    transition: all 0.3s ease;
+}
+
+.carousel-indicators .active {
+    opacity: 1;
+    background-color: #c98a24; /* darker gold for active */
+    transform: scale(1.2);
+}
+
+.carousel-indicators button:hover {
+    opacity: 1;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.carousel-item .caption-text-content h5,
+.carousel-item .caption-text-content p,
+.carousel-item .caption-text-content .slider-btn,
+.carousel-item .image-stack-effect {
+    opacity: 0;
+    transition-property: opacity, transform;
+    transition-duration: 0.6s; /* Duration of the animation for each element */
+    transition-timing-function: ease-out;
+}
+
+/* Initial transforms - customize as you like */
+.carousel-item .caption-text-content h5,
+.carousel-item .caption-text-content p,
+.carousel-item .caption-text-content .slider-btn {
+    transform: translateY(30px); /* Text elements slide up */
+}
+
+.carousel-item .image-stack-effect {
+    transform: translateX(50px) scale(0.9); /* Image slides from right and scales up */
+}
+
+.carousel-item.active .caption-text-content h5,
+.carousel-item.active .caption-text-content p,
+.carousel-item.active .caption-text-content .slider-btn,
+.carousel-item.active .image-stack-effect {
+    opacity: 1;
+    transform: translateY(0) translateX(0) scale(1); /* Reset transforms to final state */
+}
+
+/*
+  Staggered transition delays for elements within an active slide.
+  Adjust these delays to fine-tune the timing.
+  Bootstrap's slide transition is about 0.6s. These delays start soon after.
+*/
+
+/* Targeting specific title IDs for potentially different first-element timing if needed,
+   otherwise the general h5 selector above would catch them.
+   Let's use the more specific IDs for the main titles.
+*/
+.carousel-item.active #CarETRIS1,
+.carousel-item.active #CarSPMS1,
+.carousel-item.active #CarPOS1 {
+    transition-delay: 0.2s; /* Main title appears first */
+}
+
+/* Sub-titles (the second h5 in each text block) */
+/* Using a more general approach if IDs aren't consistent for sub-titles,
+   or you can target their specific IDs too like #CarETRIS, #CarSPMS, #CarPOS */
+.carousel-item.active .caption-text-content h5:not(#CarETRIS1):not(#CarSPMS1):not(#CarPOS1) {
+    transition-delay: 0.35s; /* Sub-title appears next */
+}
+/* If you used #CarETRIS, #CarSPMS, #CarPOS for subtitles, you'd do: */
+/*
+.carousel-item.active #CarETRIS,
+.carousel-item.active #CarSPMS,
+.carousel-item.active #CarPOS {
+    transition-delay: 0.35s;
+}
+*/ 
+
+
+.carousel-item.active .caption-text-content p {
+    transition-delay: 0.5s; /* Paragraph appears after titles */
+}
+
+.carousel-item.active .caption-text-content .slider-btn {
+    transition-delay: 0.65s; /* Button appears last in text block */
+}
+
+.carousel-item.active .image-stack-effect {
+    transition-delay: 0.4s; /* Image animates in around the same time as subtitle/paragraph */
+}

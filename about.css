@@ -1,0 +1,104 @@
+
+/* About US */
+
+/* About ETR (Placeholder as of now */
+.AboutETRBG {
+    margin-top: 110px;
+    background-color: #2A5D9A;
+    background-image: url(Pics/abstractbg4.png);
+    background-blend-mode: overlay;
+    z-index: 1;
+}
+
+.AboutETR2 {
+    margin-left: 90px;
+    background-color: #d1d1d1;
+    border-radius: 40px 0 0 40px;
+    transform: translate(0%, -50%);
+    z-index: 2;
+}
+
+#AboutETR2Items {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#ActiveClients, #ProjectsDone, #TeamAdvisor, #GloriousYears {
+    margin-top: -15px;
+    margin-left: 50px;
+    margin-bottom: 0px;
+    font-weight: bold;
+}
+
+#Fnum, #SNum, #TNum, #Gnum {
+    margin-left: 50px;
+    margin-top: -5px;
+    font-size: 45px;
+}
+
+#AboutETRPic {
+    height: 500px;
+    width: 405px;
+    margin-top: 10px;
+    color: #d1d1d1;
+    position: relative;
+    background-color: #d1d1d1;
+    border-radius: 0 0 200px 200px;
+    transform: translate(20%, -23%);
+    z-index: 2;
+}
+
+#SirEdPic {
+    height: 480px;
+    width: 380px;
+    position: relative;
+    border-radius: 0 0 200px 200px;
+    transform: translate(0%, 1%);
+    z-index: 2;
+}
+
+#AboutETRPUnderPic {
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 100px;
+    margin-top: -90px;
+    color: #140E34;
+}
+
+#TransformBusiness {
+    margin-left: 100px;
+    margin-top: -20px;
+    line-height: 40px;
+    color: white;
+}
+
+#WeListen {
+    margin-left: 100px;
+    color: white;
+}
+
+#UIUXBar, #DevelopmentBar, #WebDevelopmentBar {
+    margin-top: 10px;
+    margin-left: 100px;
+    font-weight: bold;
+    color: white;
+}
+
+#UIUXBarP, #DevBP, #WebDevP {
+    font-weight: bold;
+}
+
+.progress {
+    margin-top: 10px;
+    margin-left: 100px;
+    width: 700px;
+}
+
+#ContactUsBTNAboutETR {
+    background-color: #E8AB42;
+    width: 200px;
+    height: 60px;
+    margin-top: 40px;
+    margin-left: -230px;
+    font-weight: bold;
+}

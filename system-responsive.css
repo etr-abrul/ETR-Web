@@ -48,6 +48,7 @@
   }
 
   #AboutCompY, #ServicesY, #ContactUsY{
+    margin-left: 15px;
     font-size: 13px;
   }
   
@@ -55,7 +56,7 @@
     background-color: white;
     border-radius: 6px;
     border: 1px solid #ccc;
-    padding: 6px 10px;
+    padding: 6px 16px;
   }
 
   .carousel-control-prev,
@@ -75,6 +76,7 @@
   }
 
   .caption-text-content {
+    margin-top: 30px;
     text-align: center;
     align-items: center; /* This doesn't do much here, text-align handles it */
   }
@@ -126,6 +128,103 @@
   .carousel-indicators {
     display: none;
   }
+
+  #AboutComp{
+    padding-top: 0;
+  }
+
+  #AboutCompHeader{
+    text-align: center;
+    margin-bottom: 25px;
+  }
+
+  #AboutCompHeader2{
+    margin-bottom: 25px;
+    font-size: 23px;
+  }
+
+  #WeAtETRP, #WeAtETR{
+    text-align: justify;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  #ETRTeam {
+  /* position: absolute; <-- REMOVE THIS LINE */
+  /* If you need to center the image itself, do it within #ETRTeam or its parent */
+  display: block; /* Ensure it behaves as a block element */
+  margin-left: auto; /* Center the image block */
+  margin-right: auto; /* Center the image block */
+  max-width: 100%; /* Ensure image is responsive within its container */
+  }
+
+  #ETRTeam img {
+  max-width: 100%; /* Ensures the image itself is responsive */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Removes extra space below image */
+  margin-bottom: 10px; /* If #ETRTeam itself isn't centered, this centers the img */
+  }
+
+  #SoftwarePackages{
+    text-transform: uppercase;
+    font-size: 20px;
+  }
+  
+/* Styling for the individual software package boxes */
+.Group1 {
+  /* Remove Flexbox properties that put content side-by-side */
+  display: block; /* Ensures it behaves as a standard block container */
+  /* align-items: flex-start; */ /* REMOVE */
+  /* justify-content: space-between; */ /* REMOVE */
+  /* gap: 15px; */ /* REMOVE */
+
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #E6F3FF;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px; /* Space between cards */
+}
+
+/* Styling for the icons */
+.Group1 i {
+  font-size: 3em; /* Adjust icon size */
+  display: block; /* Make the icon a block element so title flows below it */
+  margin-bottom: 10px; /* Space between icon and title */
+  color: #007bff; /* Example icon color */
+  /* Ensure no conflicting float or positioning */
+  float: none; /* Make sure it's not floating */
+  position: static; /* Make sure it's not absolutely/relatively positioned */
+}
+
+/* Specific styling for the titles */
+.Group1 h4 {
+  margin-top: 0; /* Remove top margin that might push it from the icon */
+  margin-bottom: 8px; /* Space between title and paragraph */
+  padding: 0;
+  /* If you want the title text centered below the icon, you could add: */
+  /* text-align: center; */
+}
+
+/* Specific styling for the paragraphs */
+.Group1 p {
+  margin-top: 0; /* Remove top margin that might push it from the title */
+  line-height: 1.5;
+}
+
+#ETRBS{
+  margin-left: 300px;
+  margin-bottom: 0;
+}
+
+#DCM{
+  padding: 0;
+}
+/* Adjustments for Bootstrap columns if needed for vertical spacing */
+.col-md-4.col-sm-6 {
+  margin-bottom: 5px;
+}
+
+
+
 }
 
 @media (max-width: 768px) {

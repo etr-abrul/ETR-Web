@@ -201,6 +201,7 @@
 }
 
 #ContactQL {
+    margin-left: 70px;
     font-weight: bold;
     font-size: 20px;
     margin-top: 15px;
@@ -221,6 +222,8 @@
 }
 
 #ContactAddressQL {
+    padding-right: 90px;
+    margin-left: 70px;
     margin-top: -5px;
     font-size: 13px;
     font-weight: lighter;

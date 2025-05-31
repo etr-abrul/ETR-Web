@@ -396,6 +396,7 @@
     #ContactQL, #ContactAddressQL {
         margin-left: 20px !important; /* */
         margin-right: 0 !important;
+        padding: 0 !important;
     }
 
     #PhoneQL, #PhonePQL, #EmailQL, #EmailPQL {

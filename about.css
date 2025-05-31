@@ -2,6 +2,10 @@
 /* About US */
 
 /* About ETR (Placeholder as of now */
+  #AboutComp{
+    padding-top: 90px !important;
+  }
+
 .AboutETRBG {
     margin-top: 110px;
     background-color: #2A5D9A;

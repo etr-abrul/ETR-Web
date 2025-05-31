@@ -31,8 +31,8 @@
   }
 }
 
-@media (max-width: 992px) {
-  
+@media (max-width: 992px){
+
   .container{
     width: auto;
   }
@@ -129,8 +129,10 @@
     display: none;
   }
 
+  /* About Us */
+
   #AboutComp{
-    padding-top: 0;
+    padding-top: 90px !important;
   }
 
   #AboutCompHeader{
@@ -163,6 +165,10 @@
   display: block; /* Removes extra space below image */
   margin-bottom: 10px; /* If #ETRTeam itself isn't centered, this centers the img */
   }
+
+
+
+  /*Software Packages*/
 
   #SoftwarePackages{
     text-transform: uppercase;
@@ -210,10 +216,6 @@
   line-height: 1.5;
 }
 
-#ETRBS{
-  margin-left: 300px;
-  margin-bottom: 0;
-}
 
 #DCM{
   padding: 0;
@@ -223,10 +225,71 @@
   margin-bottom: 5px;
 }
 
+/* Our Services */
 
+.ETRServices {
+    padding-top: 10px !important;
+}   
+
+#OurServices {
+  margin-top: 50px !important;
+  font-size: 30px !important;
+}
+
+#WeDealWithAspects {
+    font-size: 17px !important;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+.Services1 {
+    height: 320px;
+    margin-top: -20px;
+    margin-bottom: 50px !important;
+    padding: 40px 40px 40px 0;
+    border-radius: 0 0 50px 0;
+    background-color: #FFFF;
+}
+
+#threelayers {
+    height: 320px;
+    margin-top: -10px !important;   
+}
+
+#AppDevPServices {
+    text-align: justify !important;
+    color: black;
+}
+
+#TechIndex {
+    text-transform: uppercase !important;
+    margin-top: 20px !important;
+    text-align: center !important;
 
 }
 
+#WeDeliverSol {
+  text-align: center !important;
+  font-size: 21px !important;
+}
+
+.webicon, .androidicon, .windows, .ios {
+  margin: 20px auto !important; /* Center horizontally with spacing */
+  padding-top: 20px;
+  border-radius: 10px;
+  text-align: center;
+  border: 2px dashed white;
+  width: 150px;
+  height: 150px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+}
 @media (max-width: 768px) {
   .carousel-caption {
     margin-bottom: 40px;

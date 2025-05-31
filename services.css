@@ -1,0 +1,210 @@
+
+/* Our Services */
+
+#WWPT {
+    margin-left: 90px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: black;
+}
+
+#WWPTP {
+    margin-left: 90px;
+    padding-bottom: 60px;
+    margin-top: -10px;
+    font-size: 20px;
+    font-weight: 350;
+    color: black;
+}
+
+.bi-gear-fill, .bi-award-fill {
+    font-size: 80px;
+    margin-left: 70px;
+    margin-top: 80px;
+    font-weight: bold;
+    color: black;
+    z-index: 2;
+}
+
+.TwoBoxes {
+    border-radius: 10px;
+    margin-top: 80px;
+    padding-top: 50px;
+    background-color: #E8AB42;
+    background-image: url(Pics/samplepic1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+    transform: translate(0%, -5%);
+    z-index: 2;
+}
+
+.TwoBoxes2 {
+    border-radius: 10px;
+    margin-top: 80px;
+    padding-top: 50px;
+    background-color: #E8AB42;
+    background-image: url(Pics/samplepic2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;  
+    transform: translate(0%, -5%);
+    z-index: 2;
+}
+
+.ETRServices {
+    /* margin-top: -230px; */
+    text-align: center;
+    color: white;
+    background-image: url(Pics/abstractb4.png);
+    background-blend-mode: overlay;
+}   
+
+#OurServices {
+    font-size: 35px;
+    margin-top: 150px;
+}
+
+#WeDealWithAspects {
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+.Services1 {
+    height: 320px;
+    margin-top: -20px;
+    margin-bottom: 100px;
+    padding: 40px 40px 40px 0;
+    border-radius: 0 0 50px 0;
+    background-color: #FFFF;
+}
+
+#threelayers {
+    height: 320px;
+    margin-top: -80px;   
+}
+
+#AppDevh4 {
+    font-size: 20px;
+    margin-top: 10px;
+    font-weight: bold;
+    text-align: center;
+    color: #140E34;
+}
+
+#AppDevPServices {
+    text-align: center;
+    color: black;
+}
+
+.bi-pc-display, #AppDevh4, #AppDevPServices {
+    margin-left: 40px;
+    margin-top: 10px;
+}
+
+#CHMIcon, #SMIcon, #CCTVIcon, #SSIcon,
+#TSIcon , #EMIcon, #SMMIcon {
+    margin-left: 40px;
+    margin-top: -20px;
+} 
+
+#TechnoIndex {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-top: 10px;
+    font-size: 30px;
+}
+
+#TechIndexP {
+    margin-left: -5px;
+    padding-top: 25px;
+    color: white;
+}
+
+.TechIndex1 svg {
+    margin-left: -5px;
+}
+
+.TechIndex1 {
+  margin-top: 20px;
+  margin-bottom: 80px;
+  padding: 42px 36px 38px 45px;
+  border-radius: 10px;
+  border: 2px dashed #fff;
+  background: none;
+  cursor: pointer;
+}
+
+/* Tech Index */
+
+#TechnoIndex {
+    margin-top: -10px;
+}
+
+#RealTimeMonitoring {
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.TechIndexSection, .ETRServices{
+    margin-bottom: -50px;
+    background-color: #2A5D9A;
+    background-image: url(Pics/abstractbg4.png);
+    background-blend-mode: overlay;
+    z-index: 1;
+}
+
+#TechIndex {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 100px;
+    color: white;
+}
+
+#WeDeliverSol {
+    font-size: 35px;
+    text-align: left;
+    color: white;
+}
+
+
+.bi-display {
+    font-size: 70px;
+    color: white;
+}
+
+#WebP, #AndroidP, #WindowsP, #iOS{
+    font-size: 20px;
+    padding-top: 10px;
+    font-weight: bold;
+    color: white;
+}
+
+.webicon, .androidicon {
+    margin-bottom: 100px;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-radius: 10px;
+    text-align: center;
+    border: 2px dashed white;
+}
+
+.windows {
+    margin-bottom: 50px;
+    margin-top: -80px;
+    padding-top: 30px;
+    border-radius: 10px;
+    text-align: center;
+    border: 2px dashed white;
+}
+
+.ios {
+    margin-bottom: 50px;
+    margin-top: -80px;
+    padding-top: 20px;
+    border-radius: 10px;     
+    text-align: center;
+    border: 2px dashed white;
+}

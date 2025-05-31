@@ -288,6 +288,60 @@
   justify-content: center;
 }
 
+/*Contact*/
+
+#GetInTouch{
+    margin-top: 10px;
+    font-size: 30px !important;
+}
+#MonthlyProjects {
+    display: none;
+}
+
+#WeHaveManyReviewsGIT {
+    margin: 0;
+    font-size: 16px !important;  
+}
+
+.RectangleContactID {
+  margin: 5px !important;
+  margin-top: -10px !important;
+  border-radius: 10px;
+}
+
+#GetInTouchText {
+    margin-top: 20px;
+}
+
+.map-area {
+    position: relative;
+    height: 400px !important;
+    /* This creates an intrinsic aspect ratio (e.g., 56.25% for 16:9, 75% for 4:3) */
+    /* Based on your image, 600px height for 1300px width is roughly 46.15%. Let's use 50% for a slightly taller map, or calculate precisely if needed. */
+    padding-bottom: 50%; /* (height / width) * 100% = (600 / 1300) * 100% = 46.15% */
+    height: 0; /* Important for the padding-bottom trick to work */
+    overflow: hidden; /* Hides anything outside the aspect ratio */
+    
+}
+
+/*Send your message*/
+
+#SendYourMessage {
+   display: none;
+}
+
+#SendYourMessageH2 {
+  margin-top: 290px !important;
+  font-size: 30px !important;
+  text-align: center;
+}
+
+#SendYourMessageR {
+    margin-top: 10px !important;
+    font-size: 15px;
+    text-indent: 20px;
+}
+
 
 }
 @media (max-width: 768px) {

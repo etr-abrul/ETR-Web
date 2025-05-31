@@ -1,0 +1,241 @@
+/* Get In Touch */
+
+.GetInTouchSection {
+    background-color: #2A5D9A;
+    background-image: url(Pics/abstractbg4.png);
+    background-blend-mode: overlay;
+    z-index: 1;
+}
+
+#MonthlyProjects {
+    margin-top: -10px;
+    margin-bottom: -15px;
+    color: white;
+}
+
+#WeHaveManyReviewsGIT {
+    font-size: 20px;
+    color: white;
+}
+
+#GetInTouch{
+    margin-top: 100px;
+    font-size: 35px;
+    color: white;
+}
+
+.RectangleContactID {
+    margin-top: -20px;
+    background-color: #F2F2F2;
+    box-shadow: 5px 5px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+#ContactID {
+    margin-left: 75px;
+    margin-top: 8px;
+    font-size: 15px;
+    color: #000;
+}
+
+#ContactAddressDesc {
+    margin-left: 75px;
+    margin-top: -10px;
+    padding-bottom: 8px;
+    font-size: 13px;
+    text-align: left;
+    font-weight: lighter;
+    color: #000;
+}
+
+#PhoneID, #Email{
+    margin-left: 75px;
+    margin-top: 15px;
+    font-size: 15px;
+    color: #000;
+}
+
+#EmailDesc {
+    margin-left: 75px;
+    margin-top: -10px;
+    padding-bottom: 20px;
+    font-size: 13px;
+    font-weight: lighter;
+    color: #000;
+}
+
+#PhoneDesc {
+    margin-left: 75px;
+    margin-top: -10px;
+    padding-bottom: 20px;
+    font-size: 13px;
+    font-weight: lighter;
+    color: #000;
+}
+
+.bi-geo-alt-fill, .bi-telephone-fill, .bi-envelope-fill {
+    margin-left: 30px;
+    margin-bottom: -70px;
+    margin-top: 20px;
+}
+
+#GetInTouchText {
+    margin-top: -10px;
+    margin-bottom: 150px;
+    color: white;
+}
+
+/* Map */
+
+.map-area {
+    margin-top: -140px;
+    margin-bottom: -295px;
+    z-index: 2;
+}
+
+/* Send your Message */
+
+#SendYourMessage {
+    margin-top: 400px;
+    font-size: 25px;
+    font-weight: bold;
+    color: #140E34;
+}
+
+#SendYourMessageH2 {
+    font-weight: bold;
+    font-size: 40px;
+    margin-top: -20px;
+    margin-left: -3px;
+}
+
+#SendYourMessageR {
+    margin-top: 400px;
+}
+
+#ContactUsLabels::after {
+    content: ' *';
+    color: red;
+}
+
+.form-label {
+    margin-top: 30px;
+}
+
+.form-control {
+    border-radius: 6px;
+    border: solid 1px #b6b6b6;
+    box-shadow: 3px 3px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+#linebreak {
+    display: none;
+}
+
+#ContactUsBtn {
+    width: 200px;
+    height: 60px;
+    font-weight: bold;
+    font-size: 15px;
+    margin-top: 15px;
+    margin-left: -75px;
+    margin-bottom: 30px;
+    margin-left: 5px;
+    background-color: #E8AB42;
+}
+
+#ContactUsBTNLM {
+    width: 200px;
+    height: 60px;
+    font-weight: bold;
+    font-size: 15px;
+    margin-top: 30px;
+    margin-left: -75px;
+    margin-bottom: 30px;
+    margin-left: 5px;
+    background-color: #E8AB42;
+}
+
+/* Preparing Business */
+
+/* Quick Links */
+.QuickLinks {
+    position: relative;
+    z-index: 2;
+    margin-top: -50px; /* this pulls it up over PreparingBusiness */
+    background-color: #1E4590;
+    color: white;
+    padding: 40px 20px; /* optional spacing */
+}
+
+/* Text Styling */
+#PreparingP {
+    font-size: 30px;
+    margin-top: 30px;
+    color: white;
+}
+
+#QuickLinks {
+    margin-top: 0;
+    font-size: 20px;
+}
+
+.custome-line {
+    width: 100px;
+    color: #1E4590;
+    border-top: 1px solid white;
+}
+
+.AddressIcon {
+    margin-left: -70px;
+    margin-top: 10px;
+}
+
+.PhoneIcon {
+    margin-left: -200px;
+    margin-top: 10px;
+}
+
+.EmailIcon {
+    margin-left: -150px;
+    margin-top: 10px;
+}
+
+#ContactQL {
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+#PhoneQL {
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 13px;
+    margin-left: -125px;
+}  
+
+#EmailQL {
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 13px;
+    margin-left: -70px;
+}
+
+#ContactAddressQL {
+    margin-top: -5px;
+    font-size: 13px;
+    font-weight: lighter;
+}
+
+#PhonePQL {
+    margin-top: -5px;
+    margin-left: -125px;
+    font-size: 13px;
+    font-weight: lighter;
+}
+
+#EmailPQL {
+    margin-top: -5px;
+    margin-left: -70px;
+    font-size: 13px;
+    font-weight: lighter;
+}

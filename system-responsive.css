@@ -342,6 +342,66 @@
     text-indent: 20px;
 }
 
+/* Styling for each contact block (Address, Phone, Email) - CRITICAL FOR ALIGNMENT */
+.AddressIcon,
+.PhoneIcon,
+.EmailIcon {
+    display: flex !important; /* Makes icon and text block side-by-side */
+    align-items: flex-start !important; /* Aligns content to the top */
+    gap: 10px !important; /* Space between icon and text */
+  
+    /* Ensure no conflicting margins pulling the whole block left/right */
+    margin-left: 0 !important;   /* Clear any negative left margin on these containers */
+    margin-right: 0 !important;  /* Clear any negative right margin */
+    /* If you still want to center the whole block within its column,
+       add `d-flex justify-content-center` to the *column* div in HTML
+       as suggested previously. */
+}
+
+/* Specific adjustments for text within contact blocks */
+/* This is where the negative paragraph margins are being targeted */
+.AddressIcon h4,
+.PhoneIcon h4,
+.EmailIcon h4 {
+    font-size: 1.2rem !important;
+    margin-top: 0 !important;
+    margin-bottom: 5px !important;
+    color: #ffffff !important;
+    margin-left: 0 !important;  /* Ensure no negative left margin on H4 */
+    margin-right: 0 !important; /* Ensure no negative right margin on H4 */
+}
+
+.AddressIcon p,
+.PhoneIcon p,
+.EmailIcon p {
+    font-size: 0.95rem !important;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    color: #cccccc !important;
+    line-height: 1.5 !important;
+    margin-left: 0 !important;  /* CRITICAL: Clear the negative left margin on paragraphs */
+    margin-right: 0 !important; /* Ensure no negative right margin on paragraphs */
+}
+
+/* Ensure SVG icons don't shrink and are vertically aligned */
+.AddressIcon svg,
+.PhoneIcon svg,
+.EmailIcon svg {
+    flex-shrink: 0 !important;
+    margin-top: 3px !important;
+}
+
+    /* You mentioned 'Address' text. The h4 for Address is id="ContactQL" */
+    #ContactQL, #ContactAddressQL {
+        margin-left: 20px !important; /* */
+        margin-right: 0 !important;
+    }
+
+    #PhoneQL, #PhonePQL, #EmailQL, #EmailPQL {
+        margin-top: 0 !important; /* */
+        margin-right: 0 !important;
+        margin-left: 90px !important;
+    }
 
 }
 @media (max-width: 768px) {

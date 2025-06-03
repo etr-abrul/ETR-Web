@@ -85,7 +85,7 @@
   .carousel-caption {
     /* Remove bottom and margin-bottom */
     bottom: 1500px; /* Remove default bottom positioning */
-    top: 50%; /* Start from the middle */
+    top: 60%; /* Start from the middle */
     transform: translateY(-50%); /* Move up by half its height to truly center */
     margin-bottom: 0; /* Ensure no extra margin pushes it down */
     width: 95%; /* Keep your existing width */
@@ -97,6 +97,10 @@
     height: 100%; /* Make it take full height of the carousel item for centering */
   }
 
+  .btn{
+    transform: translateY(-80%);
+  }
+    
   /* Optional: Adjust for the space taken by the navbar if needed */
   #NavBarColor + #carouselExampleCaptions .carousel-caption {
     padding-top: 56px; /* Adjust based on your fixed navbar's height */
@@ -395,12 +399,22 @@
         margin-left: 20px !important; /* */
         margin-right: 0 !important;
         padding: 0 !important;
+        color: #FFFFFF !important;
+        margin-bottom: 10px !important;
     }
 
-    #PhoneQL, #PhonePQL, #EmailQL, #EmailPQL {
+    #PhoneQL, #EmailQL {
         margin-top: 0 !important; /* */
         margin-right: 0 !important;
         margin-left: 90px !important;
+        font-size: 19.2px !important;
+    }
+
+    #PhonePQL, #EmailPQL {
+        margin-top: 0 !important; /* */
+        margin-right: 0 !important;
+        margin-left: 90px !important;
+        font-size: 15.2px !important;
     }
 
 }

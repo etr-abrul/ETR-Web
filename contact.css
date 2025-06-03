@@ -11,17 +11,21 @@
     margin-top: -10px;
     margin-bottom: -15px;
     color: white;
+    font-family: 'Lato-regular';
 }
 
 #WeHaveManyReviewsGIT {
     font-size: 20px;
     color: white;
+    font-family: 'Lato-light';
+    margin-bottom: 30px;
 }
 
 #GetInTouch{
     margin-top: 100px;
     font-size: 35px;
     color: white;
+    font-family: 'Lato-bold';
 }
 
 .RectangleContactID {
@@ -35,6 +39,7 @@
     margin-top: 8px;
     font-size: 15px;
     color: #000;
+    font-family: 'Lato-bold';
 }
 
 #ContactAddressDesc {
@@ -45,6 +50,7 @@
     text-align: left;
     font-weight: lighter;
     color: #000;
+    font-family: 'Lato-regular';
 }
 
 #PhoneID, #Email{
@@ -52,6 +58,7 @@
     margin-top: 15px;
     font-size: 15px;
     color: #000;
+    font-family: 'Lato-bold';
 }
 
 #EmailDesc {
@@ -61,6 +68,7 @@
     font-size: 13px;
     font-weight: lighter;
     color: #000;
+    font-family: 'Lato-regular';
 }
 
 #PhoneDesc {
@@ -70,6 +78,7 @@
     font-size: 13px;
     font-weight: lighter;
     color: #000;
+    font-family: 'Lato-regular';
 }
 
 .bi-geo-alt-fill, .bi-telephone-fill, .bi-envelope-fill {
@@ -82,6 +91,7 @@
     margin-top: -10px;
     margin-bottom: 150px;
     color: white;
+    font-family: 'Lato-regular';
 }
 
 /* Map */
@@ -99,6 +109,8 @@
     font-size: 25px;
     font-weight: bold;
     color: #140E34;
+    font-family: 'Lato-regular';
+
 }
 
 #SendYourMessageH2 {
@@ -106,19 +118,26 @@
     font-size: 40px;
     margin-top: -20px;
     margin-left: -3px;
+    font-family: 'Lato-bold';
 }
 
 #SendYourMessageR {
     margin-top: 400px;
+    font-family: 'Lato-regular';
 }
 
 #ContactUsLabels::after {
     content: ' *';
     color: red;
+    font-family: 'Lato-regular' !important;
 }
 
 .form-label {
     margin-top: 30px;
+}
+
+#DataList{
+    font-family: 'Lato-regular' !important;
 }
 
 .form-control {
@@ -153,6 +172,7 @@
     margin-bottom: 30px;
     margin-left: 5px;
     background-color: #E8AB42;
+    font-family: 'Lato-regular';
 }
 
 /* Preparing Business */
@@ -191,13 +211,17 @@
 }
 
 .PhoneIcon {
-    margin-left: -200px;
+    margin-left: -120px;
     margin-top: 10px;
 }
 
 .EmailIcon {
-    margin-left: -150px;
+    margin-left: -90px;
     margin-top: 10px;
+}
+
+#ContactQL, #PhoneQL, #EmailQL, #ContactAddressQL, #PhonePQL, #EmailPQL{
+    font-family: 'Lato-regular';
 }
 
 #ContactQL {
@@ -211,14 +235,14 @@
     font-weight: bold;
     font-size: 20px;
     margin-top: 13px;
-    margin-left: -125px;
+    margin-left: -40px;
 }  
 
 #EmailQL {
     font-weight: bold;
     font-size: 20px;
     margin-top: 13px;
-    margin-left: -70px;
+    margin-left: -10px;
 }
 
 #ContactAddressQL {
@@ -231,14 +255,14 @@
 
 #PhonePQL {
     margin-top: -5px;
-    margin-left: -125px;
+    margin-left: -40px;
     font-size: 13px;
     font-weight: lighter;
 }
 
 #EmailPQL {
     margin-top: -5px;
-    margin-left: -70px;
+    margin-left: -10px;
     font-size: 13px;
     font-weight: lighter;
 }

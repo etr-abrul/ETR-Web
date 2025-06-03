@@ -64,12 +64,14 @@
 #OurServices {
     font-size: 35px;
     margin-top: 150px;
+    font-family: 'Lato-bold';
 }
 
 #WeDealWithAspects {
     font-size: 20px;
     margin-top: 10px;
     margin-bottom: 50px;
+    font-family: 'Lato-light';
 }
 
 .Services1 {
@@ -92,11 +94,13 @@
     font-weight: bold;
     text-align: center;
     color: #140E34;
+    font-family: 'Lato-regular';
 }
 
 #AppDevPServices {
     text-align: center;
     color: black;
+    font-family: 'Lato-regular';
 }
 
 .bi-pc-display, #AppDevh4, #AppDevPServices {
@@ -110,11 +114,14 @@
     margin-top: -20px;
 } 
 
+/* Tech Index */
+
 #TechnoIndex {
     margin-top: 30px;
     margin-bottom: 30px;
     padding-top: 10px;
     font-size: 30px;
+
 }
 
 #TechIndexP {
@@ -137,7 +144,6 @@
   cursor: pointer;
 }
 
-/* Tech Index */
 
 #TechnoIndex {
     margin-top: -10px;
@@ -161,12 +167,14 @@
     font-weight: bold;
     margin-top: 100px;
     color: white;
+    font-family: 'Lato-regular';
 }
 
 #WeDeliverSol {
     font-size: 35px;
     text-align: left;
     color: white;
+    font-family: 'Lato-regular';
 }
 
 
@@ -180,6 +188,7 @@
     padding-top: 10px;
     font-weight: bold;
     color: white;
+    font-family: 'Lato-regular';
 }
 
 .webicon, .androidicon {

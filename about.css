@@ -40,6 +40,20 @@
     font-size: 45px;
 }
 
+#AboutCompHeader{
+    font-family: 'Lato-regular';
+    font-size: 25px;
+}
+
+#AboutCompHeader2{
+    font-family: 'Lato-bold';
+}
+
+#WeAtETRP {
+    font-family: 'Lato-regular';
+    text-align: justify;
+}
+
 #AboutETRPic {
     height: 500px;
     width: 405px;
@@ -119,9 +133,17 @@
 
 #SoftwarePackages {
     margin-top: 100px;
-    font-size: 35px;
+    font-size: 25px;
     text-align: center  ;
+    font-family: 'Lato-bold';
+    text-transform: uppercase;
 }
+
+
+#DCMP, #ETRSP, #SPMSP, #POSP, #CSP{
+    font-family: 'Lato-regular';
+}
+
 
 .Group1 {
     margin-top: 20px;
@@ -139,4 +161,5 @@
 #ETRIS, #SPMS, #POS, #SPA, #DCM, #CS{
     padding-top: 10px;
     font-weight: bold;
+    font-family: 'Lato-regular';
 }

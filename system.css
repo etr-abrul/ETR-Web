@@ -47,6 +47,7 @@ body {
     margin: 0;
     white-space: nowrap;
     display: inline-block;
+    font-family: 'lato-regular';
   }
 
 /* Logo, navbar */ 
@@ -226,14 +227,14 @@ body {
 
 /* Specific heading styles */
 #CarETRIS1, #CarSPMS1, #CarPOS1 {
-    font-size: 40px; /* Larger font for main title */
-    /* text-align: left; /* Handled by .caption-text-content */
+    font-size: 40px;
+    font-family: 'lato-regular';
 }
 
 #CarETRIS, #CarSPMS, #CarPOS {
-    /* text-align: left; /* Handled by .caption-text-content */
     font-size: 30px; /* Sub-title */
     margin-bottom: 15px; /* Space below sub-title */
+    font-family: 'lato-semibold';
 }
 
 
@@ -246,10 +247,9 @@ body {
 
 /* Specific paragraph styles - removed margin-right, adjusted margin-bottom */
 #CarETRISP, #CarSPMSP, #CarPOSP {
-    /* text-align: left; /* Handled by .caption-text-content */
-    /* margin-right: 600px; /* REMOVED - Flexbox handles width */
     margin-bottom: 40px; /* Adjusted spacing */
     margin-top: 15px; /* Adjusted spacing */
+    font-family: 'lato-regular';
 }
 
 
@@ -294,7 +294,8 @@ body {
     display: inline-block;
     padding: 0;
     margin: 0;
-    text-decoration: none; /* Ensure links don't have underline if button is the visual */
+    text-decoration: none; 
+    font-family: 'lato-regular';
 }
 
 

@@ -50,6 +50,7 @@
   #AboutCompY, #ServicesY, #ContactUsY{
     margin-left: 15px;
     font-size: 13px;
+    font-family: 'lato-light';
   }
   
   .navbar-toggler {
@@ -146,6 +147,7 @@
   }
 
   #WeAtETRP, #WeAtETR{
+    /* font-family: 'Lato-Regular'; */
     text-align: justify;
     margin-left: 10px;
     margin-right: 10px;
@@ -274,20 +276,15 @@
   font-size: 21px !important;
 }
 
-.webicon, .androidicon, .windows, .ios {
-  margin: 20px auto !important; /* Center horizontally with spacing */
-  padding-top: 20px;
-  border-radius: 10px;
-  text-align: center;
-  border: 2px dashed white;
-  width: 150px;
-  height: 150px;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
+    .webicon, .androidicon {
+        margin-bottom: 100px; /* Original margin-bottom for larger screens */
+        margin-top: 30px; /* Original margin-top for larger screens */
+    }
+
+    .windows, .ios {
+        margin-bottom: 50px; /* Original margin-bottom for larger screens */
+        margin-top: -80px; /* Original margin-top for larger screens */
+    }
 
 /*Contact*/
 
@@ -342,6 +339,7 @@
     font-size: 15px;
     text-indent: 20px;
 }
+
 
 /* Styling for each contact block (Address, Phone, Email) - CRITICAL FOR ALIGNMENT */
 .AddressIcon,

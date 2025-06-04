@@ -73,18 +73,14 @@ body {
     height: 92.5vh; /*can be 100vh, fullscreen */
     min-height: 300px;
     background-size: cover;
-    transition: opacity 0.5s ease-in-out; /* Note: Bootstrap handles slide transitions. This might be for a custom effect. */
-    background-repeat: no-repeat; /* Combined with background-image class */
-    background-position: center center; /* Combined with background-image class */
+    transition: opacity 0.5s ease-in-out;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 
-/* Changed ID to class for multiple items */
 .carousel-background-image {
-    background-image: url(honeycomb.png); /* Ensure this path is correct */
-    /* background-repeat: no-repeat; /* Moved to .carousel-item for consolidation */
-    /* background-size: cover; /* Moved to .carousel-item for consolidation */
+    background-image: url(honeycomb.png);
 }
-
 
 .carousel-item::before {
     content: "";
@@ -94,29 +90,34 @@ body {
     right: 0;
     opacity: 0.7;
     position: absolute;
-    background: #1E4590; /* This fixed background will overlay all slides with a blue tint */
-    /* If you want slide-specific colors to be more prominent, consider adjusting this */
+    background: #1E4590;
 }
 
 .carousel-caption {
     position: absolute;
-    bottom: 10px; /* Adjusted for potentially taller content */
-    left: 5%;     /* Give some padding from edges */
-    right: 5%;    /* Give some padding from edges */
-    width: 90%;   /* Make caption area wider */
-    margin-bottom: 120px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0 15px; /* Keep horizontal padding */
+    bottom: 0; /* Changed from 10px to 0 to span full height */
+    top: 0; /* Added to span full height for vertical centering */
+    left: 0;
+    right: 0;
+    display: flex; /* Make it a flex container */
+    align-items: center; /* Vertically center its direct child */
+    justify-content: center; /* Horizontally center its direct child */
+    padding: 0 15px;
     transition: opacity 0.5s ease-in-out;
-    /* text-align: left; /* Remove this, flex children will handle alignment */
+    /* Removed width, margin-left, margin-right as flexbox will handle centering */
 }
 
 .caption-flex-container {
     display: flex;
-    align-items: center; /* Vertically align items in the middle */
-    gap: 30px; /* Space between text and image */
-    width: 100%;
+    align-items: center;
+    gap: 30px;
+    width: 100%; /* Occupy full width of its parent (carousel-caption) */
+    max-width: 1300px; /* **Add this line to set a maximum width for content and center it** */
+    height: auto;
+    margin: 0 auto; /* **Add this to horizontally center the flex container within carousel-caption** */
+    margin-bottom: 0px; /* Your existing margin-bottom */
+    padding: 20px; /* Add some internal padding */
+    box-sizing: border-box; /* Ensures padding is included in the width */
 }
 
 .caption-text-content {
@@ -227,14 +228,20 @@ body {
 
 /* Specific heading styles */
 #CarETRIS1, #CarSPMS1, #CarPOS1 {
-    font-size: 40px;
+    font-size: 2.5rem; /* Converted from 40px */
     font-family: 'lato-regular';
 }
 
 #CarETRIS, #CarSPMS, #CarPOS {
-    font-size: 30px; /* Sub-title */
-    margin-bottom: 15px; /* Space below sub-title */
+    font-size: 1.875rem; /* Converted from 30px */
+    margin-bottom: 15px;
     font-family: 'lato-semibold';
+}
+
+.carousel-caption p {
+    font-size: 1.125rem; /* Already good */
+    margin-top: 0.5rem;
+    line-height: 1.6;
 }
 
 

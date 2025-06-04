@@ -107,14 +107,14 @@
 #SendYourMessage {
     margin-top: 400px;
     font-size: 25px;
-    font-weight: bold;
     color: #140E34;
     font-family: 'Lato-regular';
+    text-transform: uppercase;
+    color: #E8AB42;
 
 }
 
 #SendYourMessageH2 {
-    font-weight: bold;
     font-size: 40px;
     margin-top: -20px;
     margin-left: -3px;

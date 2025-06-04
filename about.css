@@ -145,13 +145,14 @@
 }
 
 
+
 .Group1 {
     margin-top: 20px;
-    padding: 40px 61px 36px 28px;
+    padding: 40px 35px 36px 35px;
     border-radius: 15px;
     background-color: #CBDDFF;
     text-align: justify;
-    height: 320px;
+    height: 350px;
 }
 
 .bi-code-square, .bi-phone, .bi-card-text, .bi-gear, .bi-terminal, .bi-braces {

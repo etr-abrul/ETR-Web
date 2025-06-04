@@ -91,10 +91,9 @@
 #AppDevh4 {
     font-size: 20px;
     margin-top: 10px;
-    font-weight: bold;
     text-align: center;
     color: #140E34;
-    font-family: 'Lato-regular';
+    font-family: 'Lato-bold';
 }
 
 #AppDevPServices {
@@ -164,7 +163,6 @@
 
 #TechIndex {
     font-size: 18px;
-    font-weight: bold;
     margin-top: 100px;
     color: white;
     font-family: 'Lato-regular';
@@ -174,7 +172,7 @@
     font-size: 35px;
     text-align: left;
     color: white;
-    font-family: 'Lato-regular';
+    font-family: 'Lato-bold';
 }
 
 
@@ -186,9 +184,8 @@
 #WebP, #AndroidP, #WindowsP, #iOS{
     font-size: 20px;
     padding-top: 10px;
-    font-weight: bold;
     color: white;
-    font-family: 'Lato-regular';
+    font-family: 'Lato-bold';
 }
 
 .webicon, .androidicon {

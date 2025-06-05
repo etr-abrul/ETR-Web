@@ -27,13 +27,6 @@
     margin-bottom: 20px;
 }
 
-#ActiveClients, #ProjectsDone, #TeamAdvisor, #GloriousYears {
-    margin-top: -15px;
-    margin-left: 50px;
-    margin-bottom: 0px;
-    font-weight: bold;
-}
-
 #Fnum, #SNum, #TNum, #Gnum {
     margin-left: 50px;
     margin-top: -5px;
@@ -75,14 +68,6 @@
     z-index: 2;
 }
 
-#AboutETRPUnderPic {
-    font-size: 20px;
-    font-weight: bold;
-    margin-left: 100px;
-    margin-top: -90px;
-    color: #140E34;
-}
-
 #TransformBusiness {
     margin-left: 100px;
     margin-top: -20px;
@@ -95,16 +80,6 @@
     color: white;
 }
 
-#UIUXBar, #DevelopmentBar, #WebDevelopmentBar {
-    margin-top: 10px;
-    margin-left: 100px;
-    font-weight: bold;
-    color: white;
-}
-
-#UIUXBarP, #DevBP, #WebDevP {
-    font-weight: bold;
-}
 
 .progress {
     margin-top: 10px;
@@ -112,14 +87,6 @@
     width: 700px;
 }
 
-#ContactUsBTNAboutETR {
-    background-color: #E8AB42;
-    width: 200px;
-    height: 60px;
-    margin-top: 40px;
-    margin-left: -230px;
-    font-weight: bold;
-}
 
 
 /* What we do */
@@ -157,10 +124,4 @@
 
 .bi-code-square, .bi-phone, .bi-card-text, .bi-gear, .bi-terminal, .bi-braces {
     font-size: 50px;
-}
-
-#ETRIS, #SPMS, #POS, #SPA, #DCM, #CS{
-    padding-top: 10px;
-    font-weight: bold;
-    font-family: 'Lato-regular';
 }

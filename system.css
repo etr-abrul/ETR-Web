@@ -224,16 +224,24 @@ body {
 }
 
 /* Specific heading styles */
-#CarETRIS1, #CarSPMS1, #CarPOS1 {
+#CarETRFF1, #CarETRIS1, #CarSPMS1, #CarPOS1 {
     font-size: 2.5rem; /* Converted from 40px */
     font-family: 'lato-regular';
 }
 
-#CarETRIS, #CarSPMS, #CarPOS {
+#CarETRFF,#CarETRIS, #CarSPMS, #CarPOS {
     font-size: 1.875rem; /* Converted from 30px */
     margin-bottom: 15px;
     font-family: 'lato-semibold';
 }
+
+/* Specific paragraph styles - removed margin-right, adjusted margin-bottom */
+#CarETRFFP, #CarETRISP, #CarSPMSP, #CarPOSP {
+    margin-bottom: 40px; /* Adjusted spacing */
+    margin-top: 15px; /* Adjusted spacing */
+    font-family: 'lato-regular';
+}
+
 
 .carousel-caption p {
     font-size: 1.125rem; /* Already good */
@@ -247,13 +255,6 @@ body {
     margin-top: 0.5rem;
     line-height: 1.6;
     /* text-align: left; /* Handled by .caption-text-content */
-}
-
-/* Specific paragraph styles - removed margin-right, adjusted margin-bottom */
-#CarETRISP, #CarSPMSP, #CarPOSP {
-    margin-bottom: 40px; /* Adjusted spacing */
-    margin-top: 15px; /* Adjusted spacing */
-    font-family: 'lato-regular';
 }
 
 

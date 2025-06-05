@@ -58,6 +58,10 @@
     background-blend-mode: overlay;
 }   
 
+#DCM{
+    font-family: 'Lato-bold' ;
+}
+
 #OurServices {
     font-size: 35px;
     margin-top: 150px;

@@ -76,11 +76,11 @@
 }
 
 .Services1 {
-    height: 320px;
+    height: 310px;
     margin-top: -20px;
     margin-bottom: 100px;
     padding: 40px 40px 40px 0;
-    border-radius: 0 0 50px 0;
+    border-radius: 30px;
     background-color: #FFFF;
 }
 

@@ -301,7 +301,7 @@
 }
 
 #WeHaveManyReviewsGIT {
-    margin: 0;
+    margin-bottom: 0px !important;
     font-size: 16px !important;  
 }
 
@@ -312,7 +312,7 @@
 }
 
 #GetInTouchText {
-    margin-top: 20px;
+    margin-top: 30px !important;
 }
 
 .map-area {

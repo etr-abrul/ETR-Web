@@ -113,13 +113,19 @@
     font-size: 1.5rem;
   }
 
-  #CarETRFF1,
+  #CarETRFF1{
+    font-size: 24px !important;
+  }
+
+  #CarETRFF{
+    font-size: 18px !important;
+  }
   #CarETRIS1,
   #CarSPMS1,
   #CarPOS1 {
     font-size: 35px;
   }
-  #CarETRFF,
+
   #CarETRIS,
   #CarSPMS,
   #CarPOS {

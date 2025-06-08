@@ -98,7 +98,8 @@
   }
 
   .btn{
-    transform: translateY(-10%);
+    transform: translateY(-100%);
+    font-size: 13px !important;
   }
     
   /* Optional: Adjust for the space taken by the navbar if needed */
@@ -112,12 +113,13 @@
     font-size: 1.5rem;
   }
 
+  #CarETRFF1,
   #CarETRIS1,
   #CarSPMS1,
   #CarPOS1 {
     font-size: 35px;
   }
-
+  #CarETRFF,
   #CarETRIS,
   #CarSPMS,
   #CarPOS {

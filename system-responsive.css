@@ -426,6 +426,18 @@
         font-size: 15.2px !important;
     }
 
+    #ContactUsBTNLM {
+    width: 200px;
+    height: 60px;
+    font-size: 15px;
+    margin-top: 80px !important;
+    margin-left: -75px;
+    margin-bottom: 30px;
+    margin-left: 5px;
+    background-color: #E8AB42;
+    font-family: 'Lato-bold';
+    }
+
 }
 @media (max-width: 768px) {
   .carousel-caption {

@@ -200,7 +200,7 @@
 
   padding: 20px;
   border-radius: 8px;
-  background-color: #E6F3FF;
+  background-color: #ECF6FF;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px; /* Space between cards */
 }
@@ -210,7 +210,7 @@
   font-size: 3em; /* Adjust icon size */
   display: block; /* Make the icon a block element so title flows below it */
   margin-bottom: 10px; /* Space between icon and title */
-  color: #007bff; /* Example icon color */
+  color: black; /* Example icon color */
   /* Ensure no conflicting float or positioning */
   float: none; /* Make sure it's not floating */
   position: static; /* Make sure it's not absolutely/relatively positioned */
@@ -353,6 +353,19 @@
     text-indent: 20px;
 }
 
+#QuickLinks {
+    max-width: 150px;
+    margin: 0px !important;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 'Lato-regular';
+    color: white;
+    text-decoration: none;
+}
+
+#QuickLinks:hover {
+    color: #ffffff !important;
+}
 
 /* Styling for each contact block (Address, Phone, Email) - CRITICAL FOR ALIGNMENT */
 .AddressIcon,

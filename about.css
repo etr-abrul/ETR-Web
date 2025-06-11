@@ -59,15 +59,6 @@
     z-index: 2;
 }
 
-#SirEdPic {
-    height: 480px;
-    width: 380px;
-    position: relative;
-    border-radius: 0 0 200px 200px;
-    transform: translate(0%, 1%);
-    z-index: 2;
-}
-
 #TransformBusiness {
     margin-left: 100px;
     margin-top: -20px;
@@ -87,6 +78,12 @@
     width: 700px;
 }
 
+.img-fluid {
+    height: 352px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 
 /* What we do */
@@ -106,6 +103,9 @@
     text-transform: uppercase;
 }
 
+#DCM{
+    margin-top: 15px;
+}
 
 #DCMP, #ETRSP, #SPMSP, #POSP, #CSP{
     font-family: 'Lato-regular';
@@ -117,9 +117,10 @@
     margin-top: 20px;
     padding: 40px 35px 36px 35px;
     border-radius: 15px;
-    background-color: #CBDDFF;
+    background-color: #ECF6FF;
     text-align: justify;
     height: 350px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .bi-kanban ,.bi-code-square, .bi-phone, .bi-card-text, .bi-gear, .bi-terminal, .bi-braces {

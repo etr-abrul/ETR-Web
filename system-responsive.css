@@ -338,13 +338,16 @@
 /*Send your message*/
 
 #SendYourMessage {
-   display: none;
+  margin: 0px;
+  text-align: center;
+  font-size: 30px !important;
 }
 
 #SendYourMessageH2 {
-  margin-top: 290px !important;
-  font-size: 30px !important;
+  margin-top: 20px !important;
+  font-size: 20px !important;
   text-align: center;
+  font-family: 'lato-regular' !important;
 }
 
 #SendYourMessageR {
